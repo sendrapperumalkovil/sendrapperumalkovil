@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-body text-gray-800 bg-cream-50;
+    font-family: 'Inter', 'Noto Sans Tamil', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6, .font-heading {
+    font-family: 'Cormorant Garamond', 'Noto Sans Tamil', serif;
+  }
+
+  ::selection {
+    @apply bg-saffron-500/30 text-maroon-800;
+  }
+}
+
+@layer components {
+  .section-title {
+    @apply font-heading text-4xl md:text-5xl font-bold text-maroon-500 text-center;
+  }
+
+  .section-subtitle {
+    @apply font-heading text-lg md:text-xl text-saffron-600 text-center max-w-2xl mx-auto;
+  }
+
+  .section-divider {
+    @apply w-24 h-1 bg-gradient-to-r from-saffron-500 via-gold-400 to-saffron-500 mx-auto rounded-full;
+  }
+
+  .btn-primary {
+    @apply px-8 py-3 bg-saffron-500 text-white font-semibold rounded-full
+           hover:bg-saffron-600 active:bg-saffron-700
+           transform hover:scale-105 active:scale-95
+           transition-all duration-300 shadow-lg hover:shadow-xl
+           focus:outline-none focus:ring-2 focus:ring-saffron-400 focus:ring-offset-2;
+  }
+
+  .btn-outline {
+    @apply px-8 py-3 border-2 border-gold-400 text-gold-600 font-semibold rounded-full
+           hover:bg-gold-400 hover:text-white
+           transform hover:scale-105 active:scale-95
+           transition-all duration-300
+           focus:outline-none focus:ring-2 focus:ring-gold-400 focus:ring-offset-2;
+  }
+
+  .card {
+    @apply bg-white rounded-2xl shadow-lg hover:shadow-xl
+           transition-all duration-300 transform hover:-translate-y-1;
+  }
+
+  .animate-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+
+  .animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.5);
+  }
+
+  .text-shadow-sm {
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  .bg-temple-pattern {
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2310B981' fill-opacity='0.08'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+
+  .mandala-border {
+    border-image: repeating-linear-gradient(
+      45deg,
+      #10B981 0px,
+      #10B981 2px,
+      transparent 2px,
+      transparent 8px
+    ) 10;
+  }
+}
