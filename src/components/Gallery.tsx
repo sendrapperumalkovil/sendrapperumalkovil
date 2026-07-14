@@ -3,13 +3,13 @@ import { useScrollAnimation } from '../hooks/useScrollAnimation';
 import { X, ZoomIn, ChevronLeft, ChevronRight } from 'lucide-react';
 
 const IMAGES = [
-  { src: 'public/images/entry.jpeg', alt: 'கோவில் நுழைவாயில்', category: 'temple' },
-   { src: 'public/images/festival_temple.jpeg', alt: 'திருவிழா கொண்டாட்டம்', category: 'festival' },
-  { src: 'public/images/lamp.png', alt: 'தீபாவளி விளக்குகள்', category: 'festival' },
-  { src: 'public/images/kumbam.jpg', alt: 'பாரம்பரிய சடங்கு', category: 'event' },
+  { src: '/images/entry.jpeg', alt: 'கோவில் நுழைவாயில்', category: 'temple' },
+   { src: '/images/festival_temple.jpeg', alt: 'திருவிழா கொண்டாட்டம்', category: 'festival' },
+  { src: '/images/lamp.png', alt: 'தீபாவளி விளக்குகள்', category: 'festival' },
+  { src: '/images/kumbam.jpg', alt: 'பாரம்பரிய சடங்கு', category: 'event' },
   // { src: 'https://images.pexels.com/photos/3889840/pexels-photo-3889840.jpeg?auto=compress&cs=tinysrgb&w=600', alt: 'கோவில் கட்டிடக்கலை', category: 'temple' },
   // { src: 'https://images.pexels.com/photos/7245219/pexels-photo-7245219.jpeg?auto=compress&cs=tinysrgb&w=600', alt: 'புனித சடங்குகள்', category: 'event' },
-  { src: 'public/images/gopuram1.jpeg', alt: 'கோயில் கோபுரம்', category: 'temple' },
+  { src: '/images/gopuram1.jpeg', alt: 'கோயில் கோபுரம்', category: 'temple' },
   // { src: 'https://images.pexels.com/photos/2585389/pexels-photo-2585389.jpeg?auto=compress&cs=tinysrgb&w=600', alt: 'மாலை ஆரத்தி', category: 'event' },
   // { src: 'https://images.pexels.com/photos/1110395/pexels-photo-1110395.jpeg?auto=compress&cs=tinysrgb&w=600', alt: 'திருவிழா அலங்காரங்கள்', category: 'festival' },
   // { src: 'https://images.pexels.com/photos/3601425/pexels-photo-3601425.jpeg?auto=compress&cs=tinysrgb&w=600', alt: 'பிரார்த்தனை சடங்கு', category: 'event' },

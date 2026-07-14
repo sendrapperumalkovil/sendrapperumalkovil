@@ -12,7 +12,7 @@ export default function Hero() {
 <div className="absolute inset-0 -z-10">
   {/* Background Image */}
   <img
-    src="public/images/temple-bg.png"
+    src="/images/temple-bg.png"
     alt="Temple Background"
     className="w-full h-full object-cover"
   />
