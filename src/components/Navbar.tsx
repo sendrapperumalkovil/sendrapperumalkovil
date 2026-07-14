@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Menu, X, Church } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { useActiveSection } from '../hooks/useActiveSection';
 import AdminLogin from './AdminLogin';
 
@@ -47,15 +47,6 @@ export default function Navbar() {
             onClick={() => scrollTo('home')}
             className="flex items-center gap-3 group"
           >
-            <div
-              className={`w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 ${
-                scrolled
-                  ? 'bg-saffron-500 shadow-lg'
-                  : 'bg-saffron-500/80 backdrop-blur-sm'
-              }`}
-            >
-              <Church className="w-5 h-5 text-white" />
-            </div>
             <div className="flex flex-col">
               <span className="font-heading text-xl font-bold text-white leading-tight">
                 ஸ்ரீ ஸ்ரீ தேவி ஸ்ரீ பூதேவி ஸ்ரீ சென்றாயப்பெருமாள் திருக்கோவில்

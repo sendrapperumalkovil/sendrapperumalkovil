@@ -1,4 +1,4 @@
-import { Church, Facebook, Instagram, Youtube, Twitter, Heart } from 'lucide-react';
+import { Facebook, Instagram, Youtube, Twitter, Heart } from 'lucide-react';
 
 const QUICK_LINKS = [
   { id: 'home', label: 'முகப்பு' },
@@ -31,18 +31,13 @@ export default function Footer() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Logo & Description */}
           <div className="sm:col-span-2 lg:col-span-1">
-            <button onClick={() => scrollTo('home')} className="flex items-center gap-3 mb-4 group">
-              <div className="w-10 h-10 rounded-full bg-saffron-500 flex items-center justify-center">
-                <Church className="w-5 h-5 text-white" />
-              </div>
-              <div>
-                <span className="font-heading text-xl font-bold text-white leading-tight block">
-                  ஸ்ரீ ஸ்ரீ தேவி ஸ்ரீ பூதேவி ஸ்ரீ சென்றாயப்பெருமாள் திருக்கோவில்
-                </span>
-              </div>
+            <button onClick={() => scrollTo('home')} className="mb-4 group text-left">
+              <span className="font-heading text-xl font-bold text-white leading-tight block">
+                ஸ்ரீ ஸ்ரீ தேவி ஸ்ரீ பூதேவி ஸ்ரீ சென்றாயப்பெருமாள் திருக்கோவில்
+              </span>
             </button>
             <p className="text-white/60 text-sm leading-relaxed mb-6">
-              1952 முதல் பக்தி, சாந்தி, ஆன்மீகம் மற்றும் பாரம்பரியத்தின் புனித இடமாக
+              1846 முதல் பக்தி, சாந்தி, ஆன்மீகம் மற்றும் பாரம்பரியத்தின் புனித இடமாக
               சமூகத்திற்கு சேவை செய்கிறது.
             </p>
             <div className="flex items-center gap-3">
@@ -98,12 +93,12 @@ export default function Footer() {
           <div>
             <h4 className="font-heading text-lg font-bold mb-4 text-gold-400">தொடர்பு</h4>
             <div className="space-y-3 text-sm text-white/60">
-              <p>123 கோவில் தெரு</p>
-              <p>சென்னை, தமிழ்நாடு</p>
-              <p>இந்தியா 600001</p>
+              <p>ஸ்ரீ சென்றாயப்பெருமாள் திருக்கோவில்</p>
+              <p>க. வேலாயுதபுரம், கழுகுமலை</p>
+              <p>தூத்துக்குடி 628552</p>
               <div className="h-px bg-white/10 my-3" />
-              <p>+91 44 2345 6789</p>
-              <p>info@sridivinetemple.org</p>
+              <p>+91 63820 67847</p>
+              <p>sendrayapperumalkovil@gmail.com</p>
             </div>
           </div>
         </div>
